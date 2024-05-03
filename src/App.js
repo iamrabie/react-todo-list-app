@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import SearchField from './components/SearchField/searchField.component';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p className='text-center text-2xl'>TODO LIST APP</p>
+      <div className='h-[500px] mt-2 border border-black w-[500px] mx-auto px-3 py-5'>
+          <SearchField />
+      </div>
     </div>
   );
 }
